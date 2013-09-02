@@ -22,6 +22,11 @@ object = new Mover({
     position: new Vector2(viewport.getWidth() / 2, viewport.getHeight() / 2),
     acceleration: new Vector2(0.1, 0.2)
 });
+//
+
+//object = new HeliumBall({
+    //position: new Vector2(viewport.getWidth() / 2 * 10, viewport.getHeight() * 10 ),
+//});
 
 simulator.on('step', function(simulator, e) {
     object.update(e, viewport);
