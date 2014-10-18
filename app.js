@@ -9,17 +9,15 @@
 
     var simulator = new Simulator();
     var world = new World();
-    world.creatures.push(new Musca({
-        position: new Vector2(viewport.getWidth() * Math.random(), viewport.getHeight() * Math.random()),
-        world: world
+
+    world.add(new Musca({
+        position: new Vector2(viewport.getWidth() * Math.random(), viewport.getHeight() * Math.random())
     }));
-    world.creatures.push(new Musca({
-        position: new Vector2(viewport.getWidth() * Math.random(), viewport.getHeight() * Math.random()),
-        world: world
+    world.add(new Musca({
+        position: new Vector2(viewport.getWidth() * Math.random(), viewport.getHeight() * Math.random())
     }));
-    world.creatures.push(new Spider({
-        position: new Vector2(100, 100),
-        world: world
+    world.add(new Spider({
+        position: new Vector2(100, 100)
     }));
     //var object = new Walker({
     //x: viewport.getWidth() / 2,
