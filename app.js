@@ -19,6 +19,11 @@
     world.add(new Spider({
         position: new Vector2(100, 100)
     }));
+    setInterval(function() {
+        world.add(new Musca({
+            position: new Vector2(viewport.getWidth() * Math.random(), viewport.getHeight() * Math.random())
+        }));
+    }, 2000);
     //var object = new Walker({
     //x: viewport.getWidth() / 2,
     //y: viewport.getHeight() / 2
